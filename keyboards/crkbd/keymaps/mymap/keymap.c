@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    XXXXXXX,                         KC_6, KC_PGUP,   KC_UP,KC_PGDOWN,    KC_0, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
-      KC_LCTL, KC_F5, KC_F6, KC_F7, KC_F8, XXXXXXX,                               KC_LEFT, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, XXXXXXX,
+      KC_LCTL, KC_F5, KC_F6, KC_F7, KC_F8, XXXXXXX,                               KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
       KC_LSFT, KC_F9, KC_F10, KC_F11, KC_F12, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+---------+--------+--------|
