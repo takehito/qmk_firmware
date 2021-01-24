@@ -52,22 +52,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_RAISE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4, KC_VOLU,                      KC_PGUP, KC_WH_U,   KC_UP,  KC_WH_D, DYN_REC_STOP,  KC_DEL,
+      _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4, KC_VOLU,                      KC_PGUP, KC_WH_U,   KC_UP,  KC_WH_D, XXXXXXX,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
-      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, KC_VOLD,                      KC_PGDOWN, KC_LEFT, KC_DOWN, KC_RIGHT, DYN_MACRO_PLAY1, _______,
+      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, KC_VOLD,                      KC_PGDOWN, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
-      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12, KC_MUTE,                      XXXXXXX, KC_HOME,  KC_ESC,   KC_END, DM_REC1, _______,
+      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12, KC_MUTE,                      XXXXXXX, KC_HOME,  KC_ESC,   KC_END, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+---------+--------+--------|
                                           _______,   MO(_META), _______,    _______, _______, _______
                                       //1`--------------------------'  `--------------------------'
   ),
   [_META] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        RESET, XXXXXXX,DF(_QUERTY), DF(_EUCALYN), XXXXXXX, XXXXXXX,              KC_MS_L, KC_WH_U, KC_MS_UP, KC_WH_D, KC_MS_R, XXXXXXX,
+        RESET, XXXXXXX,DF(_QUERTY), DF(_EUCALYN), DYN_REC_STOP, XXXXXXX,         XXXXXXX, KC_WH_U, KC_MS_U, KC_WH_D, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_BTN2,XXXXXXX,
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, DYN_MACRO_PLAY1, XXXXXXX,              XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0, KC_ACL2,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_BTN3,KC_BTN4,KC_BTN5, KC_ACL0, XXXXXXX,
+      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, DM_REC1, XXXXXXX,                      XXXXXXX, KC_WH_L,XXXXXXX,  KC_WH_R, KC_BTN2, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______, _______,    KC_BTN1, _______, _______
                                       //`--------------------------'  `--------------------------'
