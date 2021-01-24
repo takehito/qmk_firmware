@@ -63,13 +63,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_META] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        RESET, XXXXXXX,DF(_QUERTY), DF(_EUCALYN), XXXXXXX, XXXXXXX,              XXXXXXX, KC_WH_U, KC_MS_UP, KC_WH_D, XXXXXXX, XXXXXXX,
+        RESET, XXXXXXX,DF(_QUERTY), DF(_EUCALYN), XXXXXXX, XXXXXXX,              KC_MS_L, KC_WH_U, KC_MS_UP, KC_WH_D, KC_MS_R, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_MS_BTN1, KC_MS_BTN2,
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_BTN2,XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MS_BTN3,KC_MS_BTN4,KC_MS_BTN5, XXXXXXX, XXXXXXX,
+      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_BTN3,KC_BTN4,KC_BTN5, KC_ACL0, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          _______, _______, _______,    _______, _______, _______
+                                          _______, _______, _______,    KC_BTN1, _______, _______
                                       //`--------------------------'  `--------------------------'
   ),
   [_EUCALYN] = LAYOUT_split_3x6_3(
