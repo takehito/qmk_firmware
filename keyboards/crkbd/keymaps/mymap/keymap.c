@@ -24,6 +24,7 @@ enum keymaps {
     _RAISE,
     _META,
     _EUCALYN,
+    _GAMING,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -58,18 +59,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
       _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12, KC_MUTE,                      XXXXXXX, KC_HOME,  KC_ESC,   KC_END, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+---------+--------+--------|
-                                          _______,   MO(_META), _______,    _______, _______, _______
+                                          _______,   MO(_GAMING), _______,    _______, _______, _______
                                       //1`--------------------------'  `--------------------------'
+  ),
+  [_GAMING] = LAYOUT_split_3x6_3(
+  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+      _______,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         XXXXXXX, KC_WH_U, KC_MS_U, KC_WH_D, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      _______,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,              XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0, KC_ACL2,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      _______,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                      XXXXXXX, KC_WH_L,XXXXXXX,  KC_WH_R, KC_BTN2, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                                          _______, _______, _______,    KC_BTN1, _______, _______
+                                      //`--------------------------'  `--------------------------'
   ),
   [_META] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        RESET, XXXXXXX,DF(_QUERTY), DF(_EUCALYN), DYN_REC_STOP, XXXXXXX,         XXXXXXX, KC_WH_U, KC_MS_U, KC_WH_D, XXXXXXX, XXXXXXX,
+        RESET, XXXXXXX,DF(_QUERTY), DF(_EUCALYN), DYN_REC_STOP, XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, DYN_MACRO_PLAY1, XXXXXXX,              XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0, KC_ACL2,
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, DYN_MACRO_PLAY1, XXXXXXX,              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, DM_REC1, XXXXXXX,                      XXXXXXX, KC_WH_L,XXXXXXX,  KC_WH_R, KC_BTN2, XXXXXXX,
+      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, DM_REC1, XXXXXXX,                      XXXXXXX, XXXXXXX,XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          _______, _______, _______,    KC_BTN1, _______, _______
+                                          _______, _______, _______,    XXXXXXX, _______, _______
                                       //`--------------------------'  `--------------------------'
   ),
   [_EUCALYN] = LAYOUT_split_3x6_3(
