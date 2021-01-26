@@ -115,7 +115,7 @@ void oled_render_layer_state(void) {
     oled_write_P(PSTR("Layer: "), false);
     switch (layer_state) {
         case L_BASE:
-            oled_write_ln_P(PSTR("Default"), false);
+            oled_write_ln_P(PSTR("Qwerty:"), false);
             break;
         case L_LOWER:
             oled_write_ln_P(PSTR("Lower"), false);
