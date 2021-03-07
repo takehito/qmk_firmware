@@ -51,29 +51,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_LOWER] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_PGUP, KC_HOME,   KC_UP,  KC_END,    KC_Y,                         KC_T,KC_MINUS, KC_LBRC, KC_RBRC,KC_BSLASH, _______,
+       KC_TAB, XXXXXXX, XXXXXXX,   KC_5, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MINUS,    KC_6, KC_LBRC, KC_RBRC, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,KC_PGDOWN,KC_LEFT, KC_DOWN,KC_RIGHT,    KC_H,                         KC_G,KC_EQUAL,    KC_5,    KC_6,KC_GRAVE, _______,
+      _______,    KC_1,   KC_2,    KC_3,    KC_4,  XXXXXXX,                    KC_BSLASH,    KC_7,    KC_8,    KC_9,    KC_0,KC_GRAVE,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,   KC_1, 	  KC_2,    KC_3,    KC_4,     KC_N,                         KC_B,    KC_7,    KC_8,    KC_9,    KC_0, _______,
+      _______,XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,                       KC_SPC,KC_EQUAL, _______, _______, _______, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______, _______,    _______,MO(_ADJUST),KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
   [_RAISE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,
+       KC_TAB,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      KC_VOLU, KC_HOME,   KC_UP,  KC_END, KC_PGUP,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                      KC_VOLD, XXXXXXX, KC_ESC,KC_PSCREEN, KC_INS,  _______,
+      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                      KC_VOLD, KC_LEFT, KC_DOWN,KC_RIGHT,KC_PGDOWN, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
-      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12,   RESET,                      KC_MUTE, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, _______,
+      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12,   RESET,                      KC_MUTE,  KC_INS,  KC_ESC,  XXXXXXX, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+---------+--------+--------|
                                           _______,MO(_ADJUST),_______,    _______, _______, KC_RALT
                                       //1`--------------------------'  `--------------------------'
   ),
   [_ADJUST] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,
+        RESET,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                      KC_VOLD, XXXXXXX,DF(_QWERTY),DF(_ORIGINAL), KC_INS,  _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
