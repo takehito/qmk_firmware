@@ -62,22 +62,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_RAISE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      KC_VOLU, KC_HOME,   KC_UP,  KC_END, KC_PGUP,  KC_DEL,
+       KC_TAB,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                       KC_INS, KC_HOME,   KC_UP,  KC_END, KC_PGUP,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                      KC_VOLD, KC_LEFT, KC_DOWN,KC_RIGHT,KC_PGDOWN, XXXXXXX,
+      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                       KC_ESC, KC_LEFT, KC_DOWN, KC_RIGHT,KC_PGDOWN, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
-      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12,   RESET,                      KC_MUTE,  KC_INS,  KC_ESC,  XXXXXXX, XXXXXXX, _______,
+      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX,                      XXXXXXX, KC_VOLD, KC_VOLU,  KC_MUTE, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+---------+--------+--------|
                                           _______,MO(_ADJUST),_______,    _______, _______, KC_RALT
                                       //1`--------------------------'  `--------------------------'
   ),
   [_ADJUST] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        RESET,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,
+        RESET,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                      KC_VOLD, XXXXXXX,DF(_QWERTY),DF(_ORIGINAL), KC_INS,  _______,
+      _______,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX,DF(_QWERTY),DF(_ORIGINAL), XXXXXXX,  _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+---------+--------+--------|
-      _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12,   RESET,                      KC_MUTE, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, _______,
+      _______,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+---------+--------+--------|
                                           _______, _______, _______,    _______, _______, KC_RALT
                                       //1`--------------------------'  `--------------------------'
