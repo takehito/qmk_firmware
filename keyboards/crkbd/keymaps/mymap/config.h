@@ -43,9 +43,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     #define RGBLIGHT_VAL_STEP 17
 // #endif
 
-#define MK_3_SPEED
-#define MK_MOMENTARY_ACCEL
-#define MK_C_OFFSET_UNMOD  4
-#define MK_C_INTERVAL_UNMOD  8
-
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
